@@ -1,0 +1,183 @@
+\documentclass[a4paper,11pt, landscape]{article}
+
+% Package pour la présentation (police, colonnes, marges ...)
+\usepackage{ae,lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[top=0.3cm, bottom=0.3cm, left=0.4cm, right=0.4cm]{geometry}
+\usepackage{enumitem}
+
+% Package pour les maths
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+%\usepackage{stmaryrd}
+
+\begin{document}
+\begin{multicols*}{4}
+\setlength{\columnsep}{1cm}
+% *****************
+%  Sujet numéro 1
+% ***************** 
+\centerline{Sujet A - HA 4}
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+
+\begin{enumerate}[leftmargin=*]
+  \item Donner la définition d'un majorant d'un ensemble A. 
+  \item Démontrer l'inégalité triangulaire suivante: $\forall x \in \mathbb{R}$, $\forall y \in \mathbb{R}, \; |x + y | \leq |x| + |y|$.
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}[leftmargin=*]
+  \item Montrer par contraposition les assertions suivantes:
+  \begin{enumerate}
+    \item $\forall A, B \in \mathcal{P}(E) \; (A \cap B = A \cup B) \Rightarrow A = B$
+    \item $\forall A, B, C \in \mathcal{P}(E) \; (A \cap B = A \cap C \; et \; A \cup B  = A \cup C) \Rightarrow B = C$
+  \end{enumerate}
+  \item Montrer que: $\forall (x;y) \in (\mathbb{R}_+)^2, \; \sqrt{x+y} < \sqrt{x} + \sqrt{y}$
+  \item Soit $f : \mathbb{R} \rightarrow \mathbb{R}$ telle que $f(x) = max\{x, 0\}$.
+  \begin{enumerate}
+    \item Montrer que $\forall x \in \mathbb{R}, x \leq f(x)$
+    \item Montrer que $f$ est croissante.
+    \item Montrer que $\forall x \in \mathbb{R}, \; f(x) = f(f(x))$
+    \item On pose $F:= \{x \in \mathbb{R} \; | \; x = f(x)\}$ et, pour tout réel x, $F_x := \{y \in F \; | \; x \leq y\}$. Déterminer $F$ et $F_x$ et montrer que $F_x$ a un ppe.
+  \end{enumerate}
+  \item Étudier les limites ci-dessous (existence, valeur éventuelle):
+  \begin{enumerate}
+    \item $\lim\limits_{x \rightarrow -1}\left(\frac{1}{1-x} - \frac{2}{1-x^2}\right)$
+    \item $\lim\limits_{x \rightarrow +\infty }\left(\sqrt{x^2+1} - x\right)$
+  \end{enumerate}
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+
+\vfill\null
+\columnbreak
+% *****************
+%  Sujet numéro 2
+% *****************
+\centerline{Sujet B - HA 4}
+
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+\begin{enumerate}[leftmargin=*]
+  \item Donner la définition du plus petit élément d'un ensemble A.
+  \item Donner une CNS sur une application $f : \mathbb{R} \rightarrow \mathbb{R}$ pour qu’elle soit croissante et décroissante.
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}[leftmargin=*]
+  \item Montrer que $\forall \epsilon > 0 \;\; \exists N \in \mathbb{N}$ tel que $(n \geq N \Rightarrow 2 - \epsilon < \frac{2n+1}{n+2} < 2+\epsilon)$
+  \item Soient A et B des parties d'un ensemble E. Montrer que $A \cap B = A \cap C \Leftrightarrow A \cap \complement{B} = A \cap \complement{C}$
+  \item Représenter les ensembles suivants:
+  \begin{enumerate}
+    \item $A:= \{(x,y) \in \mathbb{R}^2 \; | \; |x| + |y| \leq 1 \}$
+    \item $B:= \{(x,y) \in \mathbb{R}^2 \; | \; max\{|x|; |y|\} \leq 1 \}$
+    \item $C:= \{(x,y) \in \mathbb{R}^2 \; | \; 1 \leq x^2 + y^2 < 2 \}$
+    \item $D:= \{(x,y) \in \mathbb{R}^2 \; | \; |x-y| \leq 1\}$
+  \end{enumerate}
+  \item Soit $f \rightarrow ln\left(\sqrt{1 + x^2} - x\right)$. Déterminer le domaine de définition de $f$, puis étudiez sa parité et ses variations.
+  
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+\vfill\null
+\columnbreak
+% *****************
+%  Sujet numéro 3
+% ***************** 
+\centerline{Sujet C - HA 4}
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+\begin{enumerate}[leftmargin=*]
+  \item Donner la définition du graphe d'une fonction $f : E \rightarrow F$.
+  \item Montrer que l'ensemble des majorants de $]0; 1[$ est $[1; +\infty[$
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}[leftmargin=*]
+  \item Soient A et B des parties de E. On note $A \Delta B = (A \cap \complement_EB) \cup (B \cap \complement_EA)$ la différence symétrique. 
+  Montrer que: 
+  \begin{enumerate}
+    \item $(A \Delta B = A \cap B) \Leftrightarrow (A = B = \emptyset)$
+    \item $A \Delta B = B \Delta A$
+    \item $A \Delta B = \emptyset \Leftrightarrow A = B$
+  \end{enumerate}
+  \item Soient $u$ et $v$ deux applications de $\mathbb{R}$ dans $\mathbb{R}$. Soit $D$ une partie de $\mathbb{R}$. 
+  \begin{enumerate}
+    \item Donner une condition suffisante pour que: $h : D \rightarrow \mathbb{R}$ telle que $h(x) = u(x)^{v(x)}$ soit bien définie. 
+    \item On se place dans ce cas. Sur quel domaine $h$ est-elle dérivable? donner une expression de $h'(x)$.
+  \end{enumerate}
+  \item Soit $f : \mathbb{R} \rightarrow \mathbb{R}$. On suppose $f$ dérivable. Montrer que si $f$ est paire alors $f'$ est impaire. Que peut-on dire si $f$ est impaire? Prouver votre affiramation.
+  \item Étudier les limites ci-dessous (existence, valeur éventuelle):
+  \begin{enumerate}
+    \item $\lim\limits_{x \rightarrow 1}\left(\frac{1}{1-x} - \frac{2}{1-x^2}\right)$
+    \item $\lim\limits_{x \rightarrow 2}\left(\frac{x^2 - 4}{x^2 - 3x+2}\right)$
+    \item $\lim\limits_{x \rightarrow 0 }\left(\sqrt{1+\frac{1}{x}} - \sqrt{\frac{1}{x}}\right)$
+    \item $\lim\limits_{x \rightarrow +\infty }\left(\frac{x^2 + |x|}{x}\right)$
+  \end{enumerate}
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+\vfill\null
+\columnbreak
+% *****************
+%  Sujet numéro 4
+% ***************** 
+\centerline{Sujet D - HA 4}
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+\begin{enumerate}[leftmargin=*]
+  \item Donner la définition de l'ensemble image de $f : E \rightarrow F$.
+  \item Montrer que la composée de deux fonctions monotones est monotone.
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}[leftmargin=*]
+ \item Soient $A, B \subset E$. Résoudre les équations d'inconnue $X \subset E$
+ \begin{enumerate}
+   \item $A \cup X = B$
+   \item $A \cap X = B$
+ \end{enumerate}
+ \item Soit $f: E \rightarrow E$. Pour $n \in \mathbb{N}*$, on note: $f^n = f \circ f \circ ... \circ f$, et $f^0 = id_E$. Soit $A \subset E$, $A_n = f^n<A>$ et $B = \bigcup_{n \in \mathbb{N}}A_n$.
+ Montrer que: 
+ \begin{enumerate}
+   \item $f<B> \subset B$.
+   \item $B$ est la plus petite partie de E stable par $f$ et contenant A
+ \end{enumerate}
+ \item Soit $f : x \rightarrow \ln \left(x\right) - 2\sqrt{x}$
+ \begin{enumerate}
+   \item Étudiez $f$ et en déduire que $\forall x \in \mathbb{R}_+^*, \; \frac{\ln (x)}{\sqrt{x}} < 2$
+   \item En déduire la limite de $\frac{\ln(x)}{x}$ quand $x$ tend vers $+\infty$
+   \item En déduire la limite de $x\ln(x)$ lorsque $x$ tend vers 0
+ \end{enumerate}
+ \item Trouver toutes les fonctions $f : \mathbb{R} \rightarrow \mathbb{R}$ qui vérifient l'équation fonctionnelle: $\forall x \in \mathbb{R}, \forall y \in \mathbb{R}, \; |f(x) - f(y)| = |x - y|$
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+
+\end{multicols*}
+\end{document}

@@ -1,0 +1,174 @@
+\documentclass[a4paper,11pt, landscape]{article}
+
+% Package pour la présentation (police, colonnes, marges ...)
+\usepackage{ae,lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[top=0.4cm, bottom=0.4cm, left=0.4cm, right=0.4cm]{geometry}
+\usepackage{enumitem}
+
+% Package pour les maths
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{systeme}
+%\usepackage{stmaryrd}
+
+\begin{document}
+\begin{multicols*}{3}
+\setlength{\columnsep}{1cm}
+% *****************
+%  Sujet numéro 1
+% ***************** 
+\centerline{Sujet A - HA 8}
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+
+\begin{enumerate}[leftmargin=*]
+  \item Voir lien envoyé: QCM en ligne.
+  \item Soit $z \in \mathbb{C}$. Comparer $|z|$, $Im (z)$, et $|Im (z)|$. Démontrez et donnez un exemple.
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}[leftmargin=*]
+  \item Soit $n \in \mathbb{N}^*$ et $(b_k)_{k \in [| 1; n|]} \in \mathbb{R}^n$
+  \begin{enumerate}
+    \item Montrez que $\sum\limits_{k=1}^{n}|b_k| \geq \left|\sum\limits_{k=1}^{n}b_k \right|$
+    \item Déterminez une CNS pour que $\sum\limits_{k=1}^{n}|b_k| = \left|\sum\limits_{k=1}^{n}b_k \right|$
+  \end{enumerate}
+  \item Montrez que $\forall n \in \mathbb{N}^*$, $\sum\limits_{k=1}^{n}\frac{1}{k} \leq 2 \sqrt{n}$ 
+  \item On considère l'équation dans $\mathbb{C}: X^3+pX+q = 0$ (*) où $(p;q)\in \mathbb{R}^2$.
+  \begin{enumerate}
+    \item Soit $x$ une racine de (*), on pose :$\systeme{u+v=x,uv=-\frac{p}{3}}$
+    Justifier l'existence du couple $(u,v)$.\\ \\
+    Montrer que $u^3$ et $v^3$ sont racines de l'équation $X^2 + qX-\frac{p^3}{27} = 0$.
+    \item Réciproquement, soient $X'$ et$X''$ les racines de $X^2+qX-\frac{p^3}{27} = 0$. Montrer que l'on peut trouver une racine cubique $u$ de $X'$ et une racine cubique $v$ de $X''$ telles que $uv = -\frac{p}{3}$.\\
+    En déduire les racines de (*).
+    \item Discuter le nombre de racines réelles de (*).
+    
+  \end{enumerate}
+  
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+
+\vfill\null
+\columnbreak
+% *****************
+%  Sujet numéro 2
+% *****************
+\centerline{Sujet B - HA 8}
+
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+\begin{enumerate}[leftmargin=*]
+  \item Voir lien envoyé: QCM en ligne.
+  \item Montrez l'existence de l'écriture d'un nombre complexe $z \in \mathbb{U}$ de module 1 sous la forme $e^{i\theta}$. Donnez une CNS sur $\theta \in \mathbb{R}$ et $\phi \in \mathbb{R}$ pour que $e^{i\theta} = e^{i\phi}$.
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}[leftmargin=*]
+%------------
+% Exercice 1
+%------------
+  \item Soit $n \in \mathbb{N}^*$. Pour $x \in \mathbb{R}$, on souhaite calculer: $S_n(x) := \sum\limits_{k=1}^{n}kx^k$. Vous utiliserez les 2 méthodes.
+  \begin{enumerate}
+    \item Méthode 1: Posez $\varphi_n : x \mapsto \sum\limits_{k=1}^{n}x^k$. Pour $x \in \mathbb{R}$, calculez $\varphi_n'(x)$ puis exprimez $S_n(x)$ en fonction $\varphi_n'(x)$.
+    \item Méthode 2: En décrochant le dernier terme de $S_{n+1}(x)$, exprimez $S_{n+1}(x)$ en fonction de $S_{n}(x)$. En décrochant le dernier terme de $S_{n+1}(x)$, exprimez, d'une autre façon, $S_{n+1}(x)$ en fonction de $S_{n}(x)$.\\
+    Concluez.
+  \end{enumerate}
+%------------
+% Exercice 2
+%------------
+  \item On pose $\omega = \sqrt{3}+i$
+  \begin{enumerate}
+    \item Déterminer les $n \in \mathbb{Z}$ tels que $\omega^n \in \mathbb{R}$.
+    \item Déterminer les $n \in \mathbb{Z}$ tels que $\omega^n \in i\mathbb{R}$.
+  \end{enumerate}
+%------------
+% Exercice 3
+%------------
+\item
+\begin{enumerate}
+  \item Soit $z \in \mathbb{C}$. Trouvez une CNS sur $z$ pour que $|z-i| = |z+i|$
+  \item Pour $z \in \mathbb{C} \smallsetminus\{2i\}$, posons $f(z) = \frac{z+2+3i}{z-2i}$. Quel est l'ensemble des points dont l'affixe $z$ vérifie: 
+  \begin{enumerate}
+    \item $f(z) \in \mathbb{U}$
+    \item $f(z) \in i\mathbb{R}$
+  \end{enumerate}
+\end{enumerate}
+%------------
+% Exercice 4
+%------------
+
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+\vfill\null
+\columnbreak
+% *****************
+%  Sujet numéro 3
+% ***************** 
+\centerline{Sujet C - HA 8}
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+\begin{enumerate}[leftmargin=*]
+  \item Voir lien envoyé: QCM en ligne.
+  \item Démontrez que l'ensemble des solutions $\mathcal{S}$ de l'équation $z^2-sz+p$ vérifie: $\mathcal{S} = \{u;v\} \Leftrightarrow (u+v = s$ et $uv = p)$.
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}[leftmargin=*]
+%------------
+% Exercice 1
+%------------
+  \item Soit $n \in \mathbb{N}$ et $\theta \in \mathbb{R}$.
+  \begin{enumerate}
+    \item Simplifiez la somme $D_n(\theta) = \sum\limits_{k=-n}^{n}e^{ik\theta}$ (Noyau de Dirichlet)
+    \item Simplifiez la somme $F_n(\theta) = \frac{1}{n+1} \sum\limits_{k=0}^{n}D_k(\theta)$ (Noyau de Fejer)
+  \end{enumerate}
+%----------
+% Exercice 2
+%-----------
+  \item Soit $n \in \mathbb{N}$. Calculez $T_n := \sum\limits_{k=1}^{n}\frac{1}{2^k}cos\left(\frac{k\pi}{3}\right)$
+%-----------
+% Exercice 3
+%-----------
+  \item On note $j$ le nombre complexe $e^{i\frac{2\pi}{3}}$.
+  \begin{enumerate}
+    \item Représentez graphiquement le point d'affixe $j$.
+    \item Montrez que $j$ est solution de $z^3 = 1$. En déduire que $j$ puis $\bar{j}$ sont solutions de $1+z+z^2 = 0$.
+    \item Comparez: $j$; $\frac{1}{j}$ ; $\frac{1}{j^2}$;$\bar{j}$; $\bar{j^2}$ ; $j^2$
+    \item Que vaut $j^k$ pour que $k \in \mathbb{Z}$ ?
+    En déduire la valeur de $1+j^k+j^{2k}$.
+    \item Soit $n$ un entier naturel. Développez l'expression $(1+1)^n + (1+j)^n+(1+j^2)^n$
+    \item En déduire la valeur de $\sum\limits_{0 \leq 3k \leq n}\binom{n}{3k}$
+  \end{enumerate}
+%-----------
+% Exercice 4
+%-----------
+\item 
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+
+
+\end{multicols*}
+\end{document}

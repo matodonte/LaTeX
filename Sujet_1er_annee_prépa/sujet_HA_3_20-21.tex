@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt, landscape]{article}
+
+% Package pour la présentation (police, colonnes, marges ...)
+\usepackage{ae,lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[top=0.3cm, bottom=0.3cm, left=0.3cm, right=0.3cm]{geometry}
+
+% Package pour les maths
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+%\usepackage{stmaryrd}
+
+\begin{document}
+\begin{multicols*}{2}
+\setlength{\columnsep}{1cm}
+% *****************
+%  Sujet numéro 1
+% ***************** 
+\centerline{Sujet A - HA 3}
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+\begin{enumerate}
+  \item Donner la définition du complémentaire d'un ensemble A dans E.
+  \item Montrer que l'ensemble des majorants de $]0; 1[$ est $[1; +\infty[$
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}
+  \item Montrer que: $A \Rightarrow B$ si et seulement si  $non (B) \Rightarrow non(A)$.
+  \item 
+  \begin{enumerate}
+    \item Prouvez: $\forall (x, y) \in \mathbb{R}^2, \; \left(|x-y| \leq 1 \; ET \; |x+y| \leq 1 \right) \Leftrightarrow \left(|x| + |y| \leq 1 \right) $
+    \item Prouvez: $\forall (x, y) \in \mathbb{R}^2, \; |x|+|y| \leq |x+y| + |x-y|$
+  \end{enumerate}
+  \item Soit $f: \mathbb{R} \rightarrow \mathbb{R}$ et $g: \mathbb{R} \rightarrow \mathbb{R}$ telles que $f(x) = 3x+1$ et $g(x) = x^2 - 1$.
+  \begin{enumerate}
+    \item A t-on $f \circ g = g \circ f$ ?
+    \item Soit $x \in \mathbb{R}$, que vaut $f \circ g(-x)$ et $g \circ f (-x)$ ?
+    \item Une fonction $f: \mathbb{R} \rightarrow \mathbb{R}$ est paire si et seulement si $\forall x \in \mathbb{R}, \; f(-x) = f(x)$. Que peut-on dire des fonctions $f \circ g$ et $g \circ f$ ?
+  \end{enumerate} 
+  \item Montrer par contraposition les assertions suivantes:
+  \begin{enumerate}
+    \item $\forall A, B \in \mathcal{P}(E) \; (A \cap B = A \cup B) \Rightarrow A = B$
+    \item $\forall A, B, C \in \mathcal{P}(E) \; (A \cap B = A \cap C \; et \; A \cup B  = A \cup C) \Rightarrow B = C$
+  \end{enumerate}
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+
+\vfill\null
+\columnbreak
+% *****************
+%  Sujet numéro 2
+% *****************
+\centerline{Sujet B - HA 3}
+
+\begin{flushleft}
+% *****************
+%  Cours
+% ***************** 
+  \textbf{Partie cours} 
+\end{flushleft} 
+\begin{enumerate}
+  \item Donner la définition de la réunion de deux ensembles A et B.
+  \item Démontrer l'inégalité triangulaire suivante: $\forall x \in \mathbb{R}$, $\forall y \in \mathbb{R}, \; |x + y | \leq |x| + |y|$.
+\end{enumerate}
+% *****************
+%  Exercices
+% ***************** 
+\textbf{Partie exercices}
+\begin{enumerate}
+  \item Écrire la négation des assertions suivantes où P, Q, R, S sont des propositions:
+  \begin{enumerate}
+    \item $P \Rightarrow Q$
+    \item P ET NON Q
+    \item P ET (Q ET R)
+    \item P OU (Q ET R)
+    \item (P ET Q) $\Rightarrow (R \Rightarrow S)$ 
+  \end{enumerate}
+  \item Représenter les ensembles suivants:
+  \begin{enumerate}
+    \item $A:= \{(x,y) \in \mathbb{R}^2 \; | \; |x| + |y| \leq 1 \}$
+    \item $B:= \{(x,y) \in \mathbb{R}^2 \; | \; max\{|x|; |y|\} \leq 1 \}$
+    \item $C:= \{(x,y) \in \mathbb{R}^2 \; | \; 1 \leq x^2 + y^2 < 2 \}$
+    \item $D:= \{(x,y) \in \mathbb{R}^2 \; | \; |x-y| \leq 1\}$
+  \end{enumerate}
+  \item Soit $f: \mathbb{R} \rightarrow \mathbb{R}$ telle que $f(x) = x^2$. Déterminer les ensembles suivants: $f([-3; -1])$; $f([-2;1])$ ; $f([-3;-1] \cup [-2; 1])$; $f([-3;-1] \cap [-2; 1])$ ; $f([-3; 3] \cap [0; 3])$ ; $f({0})$
+  \item Montrer que $A \cap B = A \cap C \Leftrightarrow A \cap \complement{B} = A \cap \complement{C}$
+\end{enumerate}
+\centerline{$\mathcal{MR}$}
+\end{multicols*}
+\end{document}
